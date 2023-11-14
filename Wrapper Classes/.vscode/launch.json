@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - wrapper",
+            "request": "launch",
+            "mainClass": "wrapper",
+            "projectName": "Wrapper Classes_840f41dc"
+        }
+    ]
+}
