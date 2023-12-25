@@ -9,6 +9,7 @@ import java.io.Serializable;
 public class SerializableClass implements Serializable {
     private int i = 2;
     private int j = 3;
+    transient int k;
 
     public int getI() {
         return i;
@@ -21,6 +22,7 @@ public class SerializableClass implements Serializable {
     SerializableClass(int i, int j) {
         this.i = i;
         this.j = j;
+        k = i*j;
     }
 
     public static void main(String[] args) throws Exception {
@@ -34,6 +36,7 @@ public class SerializableClass implements Serializable {
         SerializableClass serializableClass = (SerializableClass) objInput.readObject();
         System.out.println("i: " + serializableClass.getI());
         System.out.println("j: " + serializableClass.getJ());
+        System.out.println("k: " + serializableClass.k);
         objInput.close();
     }
 
