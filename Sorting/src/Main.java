@@ -15,8 +15,11 @@ public class Main {
 //        new SelectionSort().selectionSort(arr);
 //        new InsertionSort().insertionSort(arr);
 //        new BubbleSort().bubbleSort(arr);
-        new HeapSort().heapSort(arr);
-
+//        new HeapSort().heapSort(arr);
+//        System.out.println(new QuickSort().partition(arr,0, arr.length));
+//        new QuickSort().quickSort(arr);
+        new MergeSort().mergesort(arr);
+        
         System.out.println(Arrays.toString(arr));
     }
 }
