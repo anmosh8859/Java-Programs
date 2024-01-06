@@ -19,7 +19,7 @@ public class Main {
 //        System.out.println(new QuickSort().partition(arr,0, arr.length));
 //        new QuickSort().quickSort(arr);
         new MergeSort().mergesort(arr);
-        
+
         System.out.println(Arrays.toString(arr));
     }
 }
