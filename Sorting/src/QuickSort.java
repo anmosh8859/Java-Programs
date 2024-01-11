@@ -11,18 +11,15 @@ public class QuickSort {
             quickSort(arr,partition,end);
         }
     }
-
-    private int partition(int [] arr, int start, int end){
-        int pivot = arr[end-1];
+    private int partition(int[] arr, int start, int end) {
+        int pivot = end-1;
         int j = start-1;
         for (int i = start; i < end-1; i++) {
-            if(arr[i]<=pivot){
-                j++;
-                Main.swap(arr,i,j);
+            if(arr[i]<=arr[pivot]){
+                Main.swap(arr,++j,i);
             }
         }
-        Main.swap(arr,end-1,j+1);
-        return j+1;
+        Main.swap(arr,++j,pivot);
+        return j;
     }
-
 }
